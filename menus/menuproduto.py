@@ -1,3 +1,4 @@
+import time
 import os
 from gerenciarproduto.cadastrarproduto import CadastrarProduto
 from gerenciarproduto.consultarproduto import ConsultarProduto
@@ -20,23 +21,43 @@ class MenuProduto:
             print('0- Voltar. ')
 
             opcao = int(input('Escolha uma opção: '))
-    
-            if opcao == 1:
-                limpar_tela()
-                CadastrarProduto()
 
-            elif opcao == 2:
-                limpar_tela()
-                ConsultarProduto()
+            match opcao:
+                case "1":
+                    limpar_tela()
+                    CadastrarProduto()
+                case "2":
+                    limpar_tela()
+                    ConsultarProduto()
+                case "3":
+                    limpar_tela()
+                    AtualizarProduto()
+                case "0":
+                    limpar_tela()
+                    print('Voltando ao menu principal.')
+                    break
+                case _:
+                    limpar_tela()
+                    print('Erro. Selecione uma opção válida.')
+                    MenuProduto()
+                    time.sleep(0.2)
+                    
+            # if opcao == 1:
+            #     limpar_tela()
+            #     CadastrarProduto()
 
-            elif opcao == 3:
-                limpar_tela()
-                AtualizarProduto()
+            # elif opcao == 2:
+            #     limpar_tela()
+            #     ConsultarProduto()
 
-            elif opcao == 0:
-                limpar_tela()
-                print('Voltando ao menu principal.')
-                break
-            else:
-                limpar_tela() 
-                print('Error. Tente Novamente.')
+            # elif opcao == 3:
+            #     limpar_tela()
+            #     AtualizarProduto()
+
+            # elif opcao == 0:
+            #     limpar_tela()
+            #     print('Voltando ao menu principal.')
+            #     break
+            # else:
+            #     limpar_tela() 
+            #     print('Error. Tente Novamente.')

@@ -17,3 +17,4 @@ class ConsultarCliente:
             print(f'Nome: {clientes[codigo]['nome']}\n cpf: {clientes[codigo]['cpf']}\n endereco: {clientes[codigo]['endereco']}\n telfone: {clientes[codigo]['telefone']}\n email: {clientes[codigo]['email']}')
         else:
          print('Cliente não encontrado')
+#transformar em metodos de uma claasse

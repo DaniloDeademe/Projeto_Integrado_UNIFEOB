@@ -19,3 +19,5 @@ class ConsultarProduto:
         else:
             limpar_tela()
             print('Produto não encontrado.')
+
+#transformar em metodos de uma claasse

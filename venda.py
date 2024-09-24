@@ -1,0 +1,1 @@
+#cria a classe venda que possui como função realizar a venda e dar baixa do item no estoque 
