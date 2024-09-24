@@ -1,7 +1,6 @@
 import os
-from gerenciarcliente.cadastrarcliente import CadastrarCliente
-from gerenciarcliente.consultarcliente import ConsultarCliente
-from gerenciarcliente.atualizarcliente import AtualizarCliente
+from cliente import CadastrarCliente
+
 
 
 def limpar_tela():
@@ -29,11 +28,11 @@ class MenuCliente:
 
             elif opcao == 2:
                 limpar_tela()
-                ConsultarCliente()
+                ...
 
             elif opcao == 3:
                 limpar_tela()
-                AtualizarCliente()
+                ...
 
             elif opcao == 0:
                 limpar_tela()

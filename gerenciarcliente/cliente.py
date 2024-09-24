@@ -1,17 +1,7 @@
-import os
+from pessoa import Pessoa
+
 
 clientes = {}
-
-class Pessoa:
-    def __init__(self, nome, idade, cpf):
-        self.nome = nome
-        self.idade = idade
-        self.cpf = cpf
-        
-
-
-def limpar_tela():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 class CadastrarCliente(Pessoa):
     def __init__(self, endereco, telefone, email, codigo):
