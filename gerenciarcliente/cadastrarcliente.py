@@ -18,3 +18,4 @@ class CadastrarCliente:
         telefone = int(input('Insira o telefone do cliente: '))
         email = input('Insira o email do cliente: ')
         clientes[codigo] = {'nome': nome, 'cpf': cpf, 'endereco': endereco, 'telefone': telefone, 'email': email}
+#transformar em metodos de uma classe

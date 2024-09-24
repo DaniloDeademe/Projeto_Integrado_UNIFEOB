@@ -17,18 +17,36 @@ class MenuPrincipal:
             print('0- Sair.')
 
             opcao = int(input('Escolha uma opção: '))
-            if opcao == 1:
-                limpar_tela()
-                MenuProduto()
-            elif opcao == 2:
-                limpar_tela()
-                MenuCliente()
-            elif opcao == 0:
-                limpar_tela()
-                print('Saindo...')
-                break
-            else:
-                limpar_tela()
-                print('Error. Tente Novamente.')
+            
+            match opcao:
+                case "1":
+                    limpar_tela()
+                    MenuProduto()
+                case "2":
+                    limpar_tela()
+                    MenuCliente()
+                case "3":
+                    limpar_tela()
+                    RelizarVenda()
+                case "0":
+                    limpar_tela()
+                    print("Saindo...")
+                case _: #underline é usado como coringa para capturar qualquer outro caractere.
+                    limpar_tela()
+                    print('Erro. Selecione uma opção válida.')
+            
+            # if opcao == 1:
+            #     limpar_tela()
+            #     MenuProduto()
+            # elif opcao == 2:
+            #     limpar_tela()
+            #     MenuCliente()
+            # elif opcao == 0:
+            #     limpar_tela()
+            #     print('Saindo...')
+            #     break
+            # else:
+            #     limpar_tela()
+            #     print('Error. Tente Novamente.')
 
 

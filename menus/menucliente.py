@@ -22,25 +22,42 @@ class MenuCliente:
             print('0- Voltar. ')
 
             opcao = int(input('Escolha uma das opções: '))
+            
+            match opcao:
+                case "1":
+                    limpar_tela()
+                    CadastrarCliente()
+                case "2":
+                    limpar_tela()
+                    ConsultarCliente()
+                case "3":
+                    limpar_tela()
+                    AtualizarCliente()
+                case "0":
+                    limpar_tela()
+                    print("Voltando...")
+                case _: #underline é usado como coringa para capturar qualquer outro caractere.
+                    limpar_tela()
+                    print('Erro. Selecione uma opção válida.')
+            
+            # if opcao == 1:
+            #     limpar_tela()
+            #     CadastrarCliente()
 
-            if opcao == 1:
-                limpar_tela()
-                CadastrarCliente()
+            # elif opcao == 2:
+            #     limpar_tela()
+            #     ConsultarCliente()
 
-            elif opcao == 2:
-                limpar_tela()
-                ConsultarCliente()
+            # elif opcao == 3:
+            #     limpar_tela()
+            #     AtualizarCliente()
 
-            elif opcao == 3:
-                limpar_tela()
-                AtualizarCliente()
-
-            elif opcao == 0:
-                limpar_tela()
-                print('Voltando ao Menu Principal.')
-                break
+            # elif opcao == 0:
+            #     limpar_tela()
+            #     print('Voltando ao Menu Principal.')
+            #     break
         
-            else:
-                limpar_tela()
-                print('Error. Tente Novamente.')
+            # else:
+            #     limpar_tela()
+            #     print('Error. Tente Novamente.')
 
