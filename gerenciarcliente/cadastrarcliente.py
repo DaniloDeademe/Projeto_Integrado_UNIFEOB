@@ -2,15 +2,25 @@ import os
 
 clientes = {}
 
+class Pessoa:
+    def __init__(self, nome, idade, cpf):
+        self.nome = nome
+        self.idade = idade
+        self.cpf = cpf
+        
+
+
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-class CadastrarCliente:
-    def __init__(self):
-        self.cadastrocliente()
-
-    def cadastrocliente(self):
-        limpar_tela()
+class CadastrarCliente(Pessoa):
+    def __init__(self, endereco, telefone, email, codigo):
+        super().__init__(nome, idade, cpf)
+        self.endereco = endereco
+        self.telefone = telefone
+        self.email = email
+        self.codigo = codigo
+        
         codigo = int(input('Insira o codigo deste cliente: '))
         nome = input('Insira o nome do cliente: ')
         cpf = int(input('Insira o cpf do cliente: '))
