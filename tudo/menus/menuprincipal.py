@@ -49,4 +49,4 @@ class MenuPrincipal:
             #     limpar_tela()
             #     print('Error. Tente Novamente.')
 
-print()
+
