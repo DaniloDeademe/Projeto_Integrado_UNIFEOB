@@ -39,39 +39,3 @@ class MenuCliente:
                     limpar_tela()
                     print('Erro. Selecione uma opção válida.')
             
-            # if opcao == 1:
-            #     limpar_tela()
-            #     CadastrarCliente()
-
-            # elif opcao == 2:
-            #     limpar_tela()
-            #     ConsultarCliente()
-
-<<<<<<< HEAD
-            elif opcao == 2:
-                limpar_tela()
-                ...
-
-            elif opcao == 3:
-                limpar_tela()
-                ...
-
-            elif opcao == 0:
-                limpar_tela()
-                print('Voltando ao Menu Principal.')
-                break
-=======
-            # elif opcao == 3:
-            #     limpar_tela()
-            #     AtualizarCliente()
-
-            # elif opcao == 0:
-            #     limpar_tela()
-            #     print('Voltando ao Menu Principal.')
-            #     break
->>>>>>> Danilo
-        
-            # else:
-            #     limpar_tela()
-            #     print('Error. Tente Novamente.')
-
