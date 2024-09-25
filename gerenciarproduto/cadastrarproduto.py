@@ -22,3 +22,5 @@ class CadastrarProduto:
         quantidade = int(input('Insira a quantidade do produto: '))
         produtos[codigo] = {'nome': nome, 'descricao': descricao, 'cor': cor, 'tamanho': tamanho, 'preco': preco, 'quantidade': quantidade}
         limpar_tela()
+        
+        #transformar em metodos de uma claasse

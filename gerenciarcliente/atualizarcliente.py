@@ -23,3 +23,4 @@ class AtualizarCliente:
             clientes[codigo] = {'nome': nome, 'cpf': cpf, 'endereco': endereco, 'telefone': telefone, 'email': email}
         else:
             print('Error. Tente Novamente.')
+            #transformar em metodo de uma classe
