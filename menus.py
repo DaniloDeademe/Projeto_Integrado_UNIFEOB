@@ -1,4 +1,5 @@
 from limpartela import limpartela
+from cliente import Cliente
 
 class Menus:
     def menuprincipal(self):
@@ -49,7 +50,7 @@ class Menus:
                     ...
                 case "0":
                     limpartela()
-                    self.menuprincipal()
+                    break
                 case _:
                     print('Erro. Selecione uma opção válida.')
 
@@ -67,7 +68,7 @@ class Menus:
             
             match opcao:
                 case "1":
-                    limpartela()
+                    self.cadastrarcliente()
                     ...
                 case "2":
                     limpartela()
@@ -77,52 +78,10 @@ class Menus:
                     ...
                 case "0":
                     limpartela()
-                    self.menuprincipal()
+                    break
                 case _: #underline é usado como coringa para capturar qualquer outro caractere.
                     print('Erro. Selecione uma opção válida.')
             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 menu = Menus()
 menu.menuprincipal()
