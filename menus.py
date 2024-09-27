@@ -2,6 +2,9 @@ from limpartela import limpartela
 from cliente import Cliente
 
 class Menus:
+    def __init__(self):
+        self.cliente_manager = Cliente()
+       
     def menuprincipal(self):
         limpartela()
         while True:
@@ -68,11 +71,11 @@ class Menus:
             
             match opcao:
                 case "1":
-                    self.cadastrarcliente()
-                    ...
+                    limpartela()
+                    self.cliente_manager.cadastrar()
                 case "2":
                     limpartela()
-                    ...
+                    self.cliente_manager.consultar()
                 case "3":
                     limpartela()
                     ...
@@ -81,7 +84,8 @@ class Menus:
                     break
                 case _: #underline é usado como coringa para capturar qualquer outro caractere.
                     print('Erro. Selecione uma opção válida.')
-            
 
-menu = Menus()
-menu.menuprincipal()
+
+if __name__ == "__main__":
+    menu = Menus()
+    menu.menuprincipal()
