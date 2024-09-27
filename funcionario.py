@@ -22,3 +22,4 @@ class Funcionario(Pessoa):
     def consultarFuncionario(self):
         #if codigo in Funcionario
         pass
+    print("Alguma coisa")
