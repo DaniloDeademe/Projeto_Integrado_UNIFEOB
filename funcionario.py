@@ -3,8 +3,8 @@ import random
 from pessoa import Pessoa
 
 class Funcionario(Pessoa):
-    def __init__(self,nome,cpf,endereco,telefone,email,codigo,cargo,salario,data_admissao):
-        super().__init__(nome,cpf,endereco,telefone,email, codigo)
+    def __init__(self,nome,cpf,endereco,telefone,email,cargo,salario,data_admissao):
+        super().__init__(nome,cpf,endereco,telefone,email)
         self.cargo = cargo
         self.salario = salario
         self.data_admissao = data_admissao
